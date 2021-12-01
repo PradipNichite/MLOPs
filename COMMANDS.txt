@@ -40,3 +40,49 @@ https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sha
   119  dvc repro
   120  git commit -m "load_data  commit"
 
+update dvc.yaml
+
+
+create split_data.py
+
+
+130  python src/split_data.py 
+  131  git add .
+  132  git commit -m "splitdata.py  commit"
+  133  git push -u origin main
+  134* 
+  135  dvc repro
+  136  dvc repro
+  137  git add .
+  138  git commit -m "splitdata.py  commit"
+  139  dvc repro
+  140  git add .
+  141  git commit -m "stage 2  commit"
+  142  git push -u origin main
+
+
+
+create train_and_evaluate.py
+
+143  python src/train_and_evaluate.py 
+  144  python src/train_and_evaluate.py 
+  145  git add .
+  146  git commit -m "train and evaluate  commit"
+  147  git push -u origin main
+  148  git push -u origin main
+  149  python src/train_and_evaluate.py 
+  150  mkdir report
+  151  cd report
+  152  touch params.json
+  153  touch scores.json
+  154  cd ..
+  155  python src/train_and_evaluate.py 
+
+
+  
+
+
+
+update dvc.yaml
+
+
