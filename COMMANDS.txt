@@ -210,3 +210,27 @@ create condition for value testing
   244   git add . && git commit -m "app py updated prediction.py updated  " && git push -u origin main
   245  history
 
+
+  python app.py
+  247   git add . && git commit -m "api service added  " && git push -u origin main
+
+  python app.py 
+  in ARC / Postman : http://localhost:5000 (POST) application/json
+
+  BODY 
+
+  {
+  "fixed acidity" : 67677, 
+  "volatile acidity" : 555,
+  "citric acid" : 99,
+  "residual sugar" : 99,
+  "chlorides" : 12,
+  "free sulfur dioxide" : 789,
+  "total sulfur dioxide" : 75,
+  "density" : 2,
+  "pH" : 33,
+  "sulphates" : 9,
+  "alcohol" : 9
+}
+
+
