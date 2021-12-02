@@ -102,3 +102,6 @@ add stage for train_and_evaluate
   180  dvc metrics diff
   181  dvc metrics show 
   184  dvc params diff
+
+
+ git add . && git commit -m "test multi commands in git" && git push -u origin main
