@@ -186,6 +186,12 @@ create condition for value testing
 
   follow untitled.ipynb 
 
-  
+
   225  tox
 
+227   git add . && git commit -m "notebook added " && git push -u origin main
+  228  tox
+  229   git add . && git commit -m "flake configued in tox.ini  added " && git push -u origin main
+
+
+  
