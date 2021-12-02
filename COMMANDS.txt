@@ -78,11 +78,21 @@ create train_and_evaluate.py
   154  cd ..
   155  python src/train_and_evaluate.py 
 
-
-  
-
-
-
 update dvc.yaml
 
+add stage for train_and_evaluate 
 
+ 171  dvc repro
+  172  dvc metrics diff
+  173  clear
+  174  dvc metrics show 
+  175  dvc metrics diff
+  176  dvc repro
+  177  dvc metrics diff
+  178  dvc metrics show 
+  179  dvc repro
+  180  dvc metrics diff
+  181  dvc metrics show 
+  182  dvc params show 
+  183  dvc param show 
+  184  dvc params diff

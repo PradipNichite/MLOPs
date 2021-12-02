@@ -1,4 +1,4 @@
 {
-    "alpha": 0.9,
-    "l1_ratio": 0.4
+    "alpha": 0.98,
+    "l1_ratio": 0.43
 }
