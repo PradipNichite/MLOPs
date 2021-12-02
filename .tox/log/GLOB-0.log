@@ -1,6 +1,6 @@
 action: GLOB, msg: packaging
 cwd: /Users/apple/Documents/CLASSROOM/MLOPS/CASESTUDY1
-cmd: /Users/apple/opt/anaconda3/envs/wineq_study/bin/python setup.py sdist --formats=zip --dist-dir /Users/apple/Documents/CLASSROOM/MLOPS/CASESTUDY1/.tox/dist
+cmd: /Users/apple/opt/anaconda3/envs/wineq_study/bin/python setup.py sdist --formats=zip --dist-dir .tox/dist
 running sdist
 running egg_info
 writing src.egg-info/PKG-INFO
@@ -34,8 +34,7 @@ copying tests/__init__.py -> src-0.0.1/tests
 copying tests/conftest.py -> src-0.0.1/tests
 copying tests/test_config.py -> src-0.0.1/tests
 Writing src-0.0.1/setup.cfg
-creating /Users/apple/Documents/CLASSROOM/MLOPS/CASESTUDY1/.tox/dist
-creating '/Users/apple/Documents/CLASSROOM/MLOPS/CASESTUDY1/.tox/dist/src-0.0.1.zip' and adding 'src-0.0.1' to it
+creating '.tox/dist/src-0.0.1.zip' and adding 'src-0.0.1' to it
 adding 'src-0.0.1'
 adding 'src-0.0.1/tests'
 adding 'src-0.0.1/src.egg-info'

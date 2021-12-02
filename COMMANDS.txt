@@ -152,6 +152,7 @@ CREATE CONFTEST.PY AND CREATE A;LL GENERIC FIXTURE
   final packages used for the project execution and packaging so u can use in container or any env creation 
 
 
+below command will create your own env 
 
   216  python setup.py sdist bdist_wheel
   
@@ -169,5 +170,7 @@ CREATE CONFTEST.PY AND CREATE A;LL GENERIC FIXTURE
 uses setup.py and archives the project structure and deploys it in test env for testing.
 
 
+AUTOMATE YOUR NEWLY CREATED ENV TO GET INSTALLED WHEN PROJECT IS DEPLOYED OR ENV IS GETTING CREATED 
 
-  218  history
+
+

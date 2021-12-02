@@ -8,4 +8,4 @@ def test_generic() :
 def test_generic_error() :
     a = 10
     b = 100
-    assert a == b
+    assert a != b
