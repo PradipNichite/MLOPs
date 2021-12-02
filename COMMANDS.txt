@@ -105,3 +105,37 @@ add stage for train_and_evaluate
 
 
  git add . && git commit -m "test multi commands in git" && git push -u origin main
+
+
+
+ test
+
+
+TEST CASE 
+
+pytest
+
+file name has convention 
+
+test_<name>.py
+<name>_test.py
+
+fixture - pointcuts 
+
+BEFORE ANY TEST METHOD YOU CAN EXECUTE FIXTURE 
+test method 
+
+
+FIXTURE CAN COME IN TEST FILE BUT IT IS ACCESSIBLE ONLY FOR THAT TEST CASE 
+IF YOU WANT TO USE FIXTURE IN MULTIPLE TEST CASE FILES 
+CREATE CONFTEST.PY AND CREATE A;LL GENERIC FIXTURE 
+
+
+201  tox
+  202  mkdir tests
+  203  touch tests/conftest.py tests/test_config.py
+  206  touch tests/__init__.py
+  207  pytest -v
+  208  tox
+  209  pytest -v
+  210   git add . && git commit -m "generic test case added" && git push -u origin main
