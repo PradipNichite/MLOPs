@@ -139,3 +139,35 @@ CREATE CONFTEST.PY AND CREATE A;LL GENERIC FIXTURE
   208  tox
   209  pytest -v
   210   git add . && git commit -m "generic test case added" && git push -u origin main
+
+
+    213  touch setup.py
+  214  pip install -e .
+
+  create egg-info folder 
+
+
+  215  pip freeze
+  
+  final packages used for the project execution and packaging so u can use in container or any env creation 
+
+
+
+  216  python setup.py sdist bdist_wheel
+  
+  creates dist folder and places archive 
+
+  217  tox
+  
+  
+  comment 
+
+  ; skipsdist = True
+
+; - symbol for comment
+
+uses setup.py and archives the project structure and deploys it in test env for testing.
+
+
+
+  218  history
