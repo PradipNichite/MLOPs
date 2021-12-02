@@ -172,5 +172,20 @@ uses setup.py and archives the project structure and deploys it in test env for 
 
 AUTOMATE YOUR NEWLY CREATED ENV TO GET INSTALLED WHEN PROJECT IS DEPLOYED OR ENV IS GETTING CREATED 
 
+-e . 
 
+to be added in requirements.txt
+
+
+
+create condition for value testing 
+
+ 223  pip install jupyterlab
+  224  jupyter-lab notebooks/
+
+
+  follow untitled.ipynb 
+
+  
+  225  tox
 
