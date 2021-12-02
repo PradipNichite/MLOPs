@@ -84,15 +84,21 @@ add stage for train_and_evaluate
 
  171  dvc repro
   172  dvc metrics diff
-  173  clear
+  
+  make some value changes to alpha and l1_ratio in params.yaml 
+
   174  dvc metrics show 
   175  dvc metrics diff
+  
+  TRY ANOTHER TIME 
+
   176  dvc repro
   177  dvc metrics diff
   178  dvc metrics show 
+  
+  TRY ANOTHER TIME 
+
   179  dvc repro
   180  dvc metrics diff
   181  dvc metrics show 
-  182  dvc params show 
-  183  dvc param show 
   184  dvc params diff
