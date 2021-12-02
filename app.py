@@ -3,6 +3,7 @@ import os
 import yaml
 import joblib
 import numpy as np
+from prediction_service import prediction
 
 params_path = "params.yaml"
 webapp_root = "webapp"
@@ -15,7 +16,17 @@ app = Flask(__name__, static_folder=static_dir, template_folder=template_dir)
 @app.route("/", methods = ["GET", "POST"])
 def index() :
     if request.method == "POST" :
-        pass
+        try :
+            if request.form :
+               dict_req = dict(request.form)
+               response = prediction.form_response(dict_req) 
+               return render_template("index.html", response=response)
+            elif request.json :
+                pass
+        except Exception as e :
+            print(e)
+            error = {"error" : "Something went wrong !! better try next time"}
+            return render_template("404.html", error = error)
     else :
         return render_template("index.html")
 
