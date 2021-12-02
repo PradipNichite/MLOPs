@@ -204,5 +204,9 @@ create condition for value testing
 
 
 
-  
+   241  python app.py
+  242   git add . && git commit -m "app py added " && git push -u origin main
+  243  python app.py
+  244   git add . && git commit -m "app py updated prediction.py updated  " && git push -u origin main
+  245  history
 
