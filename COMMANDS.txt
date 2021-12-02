@@ -194,4 +194,15 @@ create condition for value testing
   229   git add . && git commit -m "flake configued in tox.ini  added " && git push -u origin main
 
 
+
+
+231  mkdir -p prediction_service/model
+  232  touch app.py
+  233  touch prediction_service/__init__.py
+  234  touch prediction_service/prediction.py
+  235   git add . && git commit -m "prediction service added " && git push -u origin main
+
+
+
   
+
